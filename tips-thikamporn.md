@@ -3,7 +3,7 @@
 > เทคนิคบางอย่างที่อาจต้องรู้ เพื่อช่วยในการเขียนภาษา C
 
 ### math-code ###
-*  HOW TO DEVIDE OF TWO NUMBERS // การหาร โดยใช้ "/" 
+*  HOW TO DEVIDE OF TWO NUMBERS ( การหาร โดยใช้ "/" )
     * สำหรับการหาร ถ้าจำนวนทั้ง 2 จำนวนเป็น "integer" แล้วหารลงตัว 
     ~~~
         #include <stdio.h>
@@ -96,31 +96,68 @@
 
 ### standard-input-output ###
 *   การรับค่าจาก standard input
+   * getchar(character) 
+   * gets(string)
+   * scanf(const char *format, ...)
 
 *   การพิมพ์ค่าไปที่ standard output
-   * The gets() and puts() Functions
-     - gets(char *s) function reads a line from stdin into the buffer pointed to by s until either a terminating newline or EOF (End of File).
+   * putchar(character)
+   * puts(string) 
+   * printf(char *format, ...)
+   
+   --ยกตัวอย่างการใช้งาน--
+     1. gets() กับ puts() 
      ~~~
         #include <stdio.h>
         int main() {
 
-        char str[100];
+            char str[100];
 
-        printf( "Enter a value :");
-        gets(str);
+            printf( "Enter a value :");
+            gets(str);
 
-        printf( "\nYou entered: ");
-        puts(str);
+            printf( "\nYou entered: ");
+            puts(str);
 
-        return 0;
+            return 0;
         }
-        -----------------------------
+        -----------------------------//result//
         Enter a value : this is test
         You entered: this is test
      ~~~
-     
+     2. getchar() กับ putchar()
+     ~~~
+        #include <stdio.h>
+        int main() {
 
-The int puts(const char *s) function writes the string 's' and 'a' trailing newline to stdout.
+            int c;
 
-### sorting ###
-*   ตัวอย่างการใช้ Bubble Sort เรียงค่าน้อยไปมาก , มากไปน้อย
+            printf("Enter a value :");
+            c = getchar();
+
+            printf("\nYou entered: ");
+            putchar(c);
+
+            return 0;
+        }
+        -----------------------------//result//
+        Enter a value : this is test
+        You entered: t
+      ~~~
+      3. scanf() กับ printf()
+      ~~~
+         #include <stdio.h>
+         int main() {
+
+            char str[100];
+            int i;
+
+            printf("Enter a value :");
+            scanf("%s %d", str, &i); 
+
+            printf("\nYou entered: %s %d ", str, i);
+
+            return 0;
+         }
+
+
