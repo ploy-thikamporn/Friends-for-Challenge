@@ -99,7 +99,24 @@
 
 *   การพิมพ์ค่าไปที่ standard output
    * The gets() and puts() Functions
-     - The char *gets(char *s) function reads a line from stdin into the buffer pointed to by s until either a terminating newline or EOF (End of File).
+     - gets(char *s) function reads a line from stdin into the buffer pointed to by s until either a terminating newline or EOF (End of File).
+     ~~~
+        #include <stdio.h>
+        int main( ) {
+
+        char str[100];
+
+        printf( "Enter a value :");
+        gets( str );
+
+        printf( "\nYou entered: ");
+        puts( str );
+
+        return 0;
+        }
+    
+     ~~~
+     
 
 The int puts(const char *s) function writes the string 's' and 'a' trailing newline to stdout.
 
