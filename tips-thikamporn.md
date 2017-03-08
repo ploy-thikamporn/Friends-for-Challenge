@@ -102,19 +102,21 @@
      - gets(char *s) function reads a line from stdin into the buffer pointed to by s until either a terminating newline or EOF (End of File).
      ~~~
         #include <stdio.h>
-        int main( ) {
+        int main() {
 
         char str[100];
 
         printf( "Enter a value :");
-        gets( str );
+        gets(str);
 
         printf( "\nYou entered: ");
-        puts( str );
+        puts(str);
 
         return 0;
         }
-    
+        -----------------------------
+        Enter a value : this is test
+        You entered: this is test
      ~~~
      
 
