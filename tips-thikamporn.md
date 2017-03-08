@@ -96,7 +96,12 @@
 
 ### standard-input-output ###
 *   การรับค่าจาก standard input
+
 *   การพิมพ์ค่าไปที่ standard output
+   * The gets() and puts() Functions
+     - The char *gets(char *s) function reads a line from stdin into the buffer pointed to by s until either a terminating newline or EOF (End of File).
+
+The int puts(const char *s) function writes the string 's' and 'a' trailing newline to stdout.
 
 ### sorting ###
 *   ตัวอย่างการใช้ Bubble Sort เรียงค่าน้อยไปมาก , มากไปน้อย
