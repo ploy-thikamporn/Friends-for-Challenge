@@ -96,9 +96,9 @@
 
 ### standard-input-output ###
 *   การรับค่าจาก standard input
-   * getchar(character) 
-   * gets(string)
-   * scanf(const char *format, ...)
+   * getchar(character) // รับค่าอักขระได้ทีละ 1 ตัว
+   * gets(string) // รับค่าอักขระได้ทีละหลายตัว หรือรับข้อความเข้ามา
+   * scanf(const char *format, ...) // ~~~
 
 *   การพิมพ์ค่าไปที่ standard output
    * putchar(character)
@@ -153,11 +153,15 @@
             int i;
 
             printf("Enter a value :");
-            scanf("%s %d", str, &i); 
+            scanf("%s %d", str, &i); // **สังเกตว่าทำไม ไม่ใส่ & หน้า str เพราะเราเก็บค่าสตริง ซึ่งเป็น อาเรย์ของคาแรคเตอร์
 
             printf("\nYou entered: %s %d ", str, i);
 
             return 0;
-         }
+          }
+          -----------------------------//result//
+          Enter a value : seven 7
+          You entered: seven 7
+       ~~~
 
 
