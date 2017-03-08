@@ -96,17 +96,17 @@
 
 ### standard-input-output ###
 *   การรับค่าจาก standard input
-   * getchar(character) // รับค่าอักขระได้ทีละ 1 ตัว
-   * gets(string) // รับค่าอักขระได้ทีละหลายตัว หรือรับข้อความเข้ามา
-   * scanf(const char *format, ...) // ~~~
+   * getchar(character) --> รับค่าอักขระได้ทีละ 1 ตัว
+   * gets(string) --> รับค่าอักขระได้ทีละหลายตัว หรือรับข้อความเข้ามา
+   * scanf(const char *format, ...) --> รับค่าออกมาตาม format ที่เรากำหนด
 
 *   การพิมพ์ค่าไปที่ standard output
-   * putchar(character)
-   * puts(string) 
-   * printf(char *format, ...)
-   
+   * putchar(character) --> แสดงค่าออกมาเป็นตัวอักขระ 1 ตัว
+   * puts(string) --> แสดงค่าออกมาเป็นข้อมความ 
+   * printf(char *format, ...) --> แสดงค่าออกมาตาม format ที่เรากำหนด
+
    --ยกตัวอย่างการใช้งาน--
-     1. gets() กับ puts() 
+     * gets() กับ puts() 
      ~~~
         #include <stdio.h>
         int main() {
@@ -125,7 +125,7 @@
         Enter a value : this is test
         You entered: this is test
      ~~~
-     2. getchar() กับ putchar()
+     * getchar() กับ putchar()
      ~~~
         #include <stdio.h>
         int main() {
@@ -144,7 +144,7 @@
         Enter a value : this is test
         You entered: t
       ~~~
-      3. scanf() กับ printf()
+      * scanf() กับ printf()
       ~~~
          #include <stdio.h>
          int main() {
