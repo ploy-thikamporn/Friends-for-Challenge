@@ -106,7 +106,7 @@
    * printf(char *format, ...) --> แสดงค่าออกมาตาม format ที่เรากำหนด
    
    _สามารถศึกษา format ของ printf()  และ scanf() ได้ที่ :_
-   ***https://wpollock.com/CPlus/PrintfRef.htm***
+   ***https://wpollock.com/CPlus/PrintfRef.htm*** หรือ ***http://www.codeforwin.in/2015/05/list-of-all-format-specifiers-in-c.html***
 
    --ยกตัวอย่างการใช้งาน--
      * gets() กับ puts() 
