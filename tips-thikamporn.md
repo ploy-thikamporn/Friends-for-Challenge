@@ -104,6 +104,9 @@
    * putchar(character) --> แสดงค่าออกมาเป็นตัวอักขระ 1 ตัว
    * puts(string) --> แสดงค่าออกมาเป็นข้อมความ 
    * printf(char *format, ...) --> แสดงค่าออกมาตาม format ที่เรากำหนด
+   
+   _สามารถศึกษา format ของ printf()  และ scanf() ได้ที่ :_
+   ***https://wpollock.com/CPlus/PrintfRef.htm***
 
    --ยกตัวอย่างการใช้งาน--
      * gets() กับ puts() 
