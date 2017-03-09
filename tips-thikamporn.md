@@ -144,7 +144,7 @@
         Enter a value : this is test
         You entered: t
       ~~~
-      * scanf() กับ printf()
+     * scanf() กับ printf()
       ~~~
          #include <stdio.h>
          int main() {
